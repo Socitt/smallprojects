@@ -3,7 +3,7 @@ import json, turtle, urllib.request, time
 screen = turtle.Screen()
 screen.setup(1300,600)
 screen.setworldcoordinates(-180,-90,180,90)
-screen.bgpic("\git\smallprojects\isstracker\map1.gif")
+screen.bgpic("smallprojects\isstracker\map1.gif")
 
 #api call 
 url = "http://api.open-notify.org/iss-now.json"
