@@ -9,10 +9,10 @@ response = requests.get(url).json()
 
 def kelvin_to_celsius_fahrenheit(kelkin):
     celsius = kelvin - 273.15
-    fahrenheit = celsius
+    fahrenheit = celsius* 9/5 +32
+    return celsius, fahrenheit
 
 
-temp_kelvin
 
 
 print(response)
