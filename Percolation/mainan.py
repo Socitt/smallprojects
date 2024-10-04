@@ -27,8 +27,8 @@ def animate(i, grid, percolation_grid, ax, to_visit_container):
         ax.set_title(f'Percolation Simulation Step {i}')
 
 def main():
-    size = 500
-    probability = 0.75
+    size = 50
+    probability = 0.6
 
 
     grid = create_grid(size, probability)
@@ -44,7 +44,7 @@ def main():
 
     ani = animation.FuncAnimation(
         fig, animate, fargs=(grid, percolation_grid, ax, to_visit_container), 
-        frames=100, interval=100, repeat=False)
+        frames=100, interval=200, repeat=False)
 
     plt.show()
 
